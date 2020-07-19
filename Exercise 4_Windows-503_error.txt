@@ -1,0 +1,7 @@
+Tried starting IIS service, but was getting error
+
+Treid to start the Default app pool 
+
+But got 5059 id error:
+
+Application pool DefaultAppPool has been disabled. Windows Process Activation Service (WAS) encountered a failure when it started a worker process to serve the application pool.

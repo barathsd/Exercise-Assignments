@@ -1,0 +1,17 @@
+Troubleshooting:
+--------------------------------------------------
+I checked the status of redis using
+#service redis status
+
+I found the error "Failed to start Advanced key-value store"
+
+I saw logs for redis file at //var/log/redis/redis-server.log
+
+I found the pid file was removed
+
+I uninstalled redis and installed again:
+---------------------------------------------------
+sudo apt-get --purge remove redis-server
+sudo rm -rf /etc/redis/dump.rdb
+sudo apt-get update
+sudo apt-get install redis-server
