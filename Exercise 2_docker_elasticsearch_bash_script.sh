@@ -5,4 +5,4 @@ sudo apt install docker.io -y
 sudo docker pull elasticsearch:7.8.0 -y
 sudo docker run -itd --name ec_container -p "8080:80" elasticsearch:7.8.0
 sudo docker exec -it ec_container /bin/bash
-sudo ps -ef | grep elasticsearch
+sudo GET _cluster/health

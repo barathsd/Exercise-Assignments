@@ -1,8 +1,7 @@
 import psutil
-import shutil
+import os
 print("CPU usage is")
 print(psutil.virtual_memory())
 print("Disk usage is")
-path = "C:"
-stat = shutil.disk_usage(path) 
-print(stat)
+cmd = 'df'
+os.system(cmd)
